@@ -1,5 +1,29 @@
+;;; chatgpt.el --- Description -*- lexical-binding: t; -*-
+;;
+;; Copyright (C) 2023 Zack Radisic
+;;
+;; Author: Zack Radisic <zack@theradisic.com>
+;; Maintainer: Zack Radisic <zack@theradisic.com>
+;; Created: May 15, 2023
+;; Modified: May 15, 2023
+;; Version: 0.0.1
+;; Keywords: abbrev bib c calendar comm convenience data docs emulations extensions faces files frames games hardware help hypermedia i18n internal languages lisp local maint mail matching mouse multimedia news outlines processes terminals tex tools unix vc wp
+;; Homepage: https://github.com/zackradisic/chatgptz
+;; Package-Requires: ((emacs "24.3"))
+;;
+;; This file is not part of GNU Emacs.
+;;
+;;; Commentary:
+;; ChatGPT
+;;
+;;; Code:
 (require 'url)
 (require 'json)
+
+(defgroup chatgpt nil
+  "Configuration for chatgpt."
+  :prefix "chatgpt-"
+  :group 'ai)
 
 (defvar chatgpt-buffer "*ChatGPT*"
   "Name of the buffer for ChatGPT.")
